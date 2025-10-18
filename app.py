@@ -1,6 +1,6 @@
 
 
-
+import os
 import numpy as np
 import streamlit as st
 import pickle
@@ -34,6 +34,7 @@ if st.button("Predict"):
     
     # Show result
     st.success(f"shoes sales data prediction is : {prediction[0]:.2f}")
+
 
 
 
