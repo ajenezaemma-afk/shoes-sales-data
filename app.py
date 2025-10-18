@@ -1,9 +1,10 @@
 
 
-import os
+
 import numpy as np
 import streamlit as st
 import pickle
+import os
 
 with open(r"shoes_sales_data.sav", 'rb') as file:
     model = pickle.load(file)
@@ -34,10 +35,4 @@ if st.button("Predict"):
     
     # Show result
     st.success(f"shoes sales data prediction is : {prediction[0]:.2f}")
-
-
-
-
-
-
 
