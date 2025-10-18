@@ -36,3 +36,4 @@ if st.button("Predict"):
     st.success(f"shoes sales data prediction is : {prediction[0]:.2f}")
 
 
+
