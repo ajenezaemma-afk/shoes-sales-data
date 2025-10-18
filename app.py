@@ -6,7 +6,7 @@ import streamlit as st
 import pickle
 import os
 
-with open(r"shoes_sales_data.sav", 'rb') as file:
+with open(r"shoes_sales_prediction_data", 'rb') as file:
     model = pickle.load(file)
     
 # Load the trained model
@@ -35,4 +35,5 @@ if st.button("Predict"):
     
     # Show result
     st.success(f"shoes sales data prediction is : {prediction[0]:.2f}")
+
 
